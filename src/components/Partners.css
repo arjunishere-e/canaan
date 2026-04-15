@@ -1,0 +1,244 @@
+/* Partners Section Styles - Premium Luxury */
+.partners-section {
+  padding: 6rem 2rem;
+  background-color: #f8f8f8;
+  width: 100%;
+}
+
+.partners-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partners-container h2 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.partners-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #d4a574;
+  border-radius: 1px;
+}
+
+.partners-intro {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b6b6b;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Grid View */
+.colleges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.college-card {
+  background: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 380px;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-top: 3px solid #d4a574;
+}
+
+.college-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.college-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.college-card:hover .college-image {
+  transform: scale(1.05);
+}
+
+.college-info {
+  padding: 1.8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.college-info h3 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0 0 0.8rem 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.location {
+  color: #000;
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-icon {
+  flex-shrink: 0;
+  color: #000;
+}
+
+.specialties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.specialty-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  background: linear-gradient(135deg, #f5f5f5 0%, #efefef 100%);
+  border: 1px solid #d4a574;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.specialty-tag:hover {
+  background: linear-gradient(135deg, #d4a574 0%, #c49563 100%);
+  color: white;
+  border-color: #c49563;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
+
+.tag-icon {
+  flex-shrink: 0;
+  color: #d4a574;
+  transition: color 0.3s ease;
+}
+
+.specialty-tag:hover .tag-icon {
+  color: white;
+}
+
+.tag-text {
+  white-space: nowrap;
+}
+
+.connect-btn {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  margin-top: 1.2rem;
+  background: transparent;
+  color: #d4a574;
+  border: 2px solid #d4a574;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.connect-btn:hover {
+  background: #d4a574;
+  color: #1a1a1a;
+  box-shadow: 0 8px 25px rgba(212, 165, 116, 0.3);
+  transform: translateY(-2px);
+}
+
+.loading,
+.error-message {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  border-radius: 0;
+}
+
+.loading {
+  background: #f0f0f0;
+  color: #6b6b6b;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+}
+
+@media (max-width: 768px) {
+  .partners-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .partners-container h2 {
+    font-size: 2rem;
+  }
+
+  .colleges-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .partners-section {
+    padding: 2rem 1rem 1.5rem 1rem;
+  }
+
+  .partners-container {
+    padding: 0 10px;
+  }
+
+  .partners-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .partners-intro {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .colleges-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 5px;
+  }
+}

@@ -1,0 +1,141 @@
+/* Services Section Styles - Premium Luxury */
+.services-section {
+  padding: 6rem 2rem;
+  background: #ffffff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-container h2 {
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.services-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #d4a574;
+  border-radius: 1px;
+}
+
+.services-intro {
+  text-align: center;
+  font-size: 1rem;
+  color: #6b6b6b;
+  margin-bottom: 4rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.course-category {
+  background: #ffffff;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border-top: 3px solid #d4a574;
+}
+
+.course-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.category-header {
+  background: #1a1a1a;
+  color: white;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+}
+
+.category-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #d4a574;
+}
+
+.course-list {
+  list-style: none;
+  padding: 1.2rem 1.5rem;
+  margin: 0;
+}
+
+.course-list li {
+  padding: 0.4rem 0;
+  color: #4a4a4a;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.course-list li:last-child {
+  border-bottom: none;
+}
+
+.course-badge {
+  color: #d4a574;
+  font-weight: 500;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .services-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .services-intro {
+    font-size: 0.95rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-list li {
+    font-size: 0.9rem;
+  }
+}

@@ -210,23 +210,6 @@
     margin: 0.4rem 0;
   }
 }
-  .footer {
-    padding: 2rem 1.5rem 1rem;
-  }
-
-  .footer-content {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-
-  .footer-section h4 {
-    font-size: 1.1rem;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-}
 
 @media (max-width: 480px) {
   .footer {

@@ -31,7 +31,25 @@ import {
   MapPin,
 } from "lucide-react";
 
-const partnerImages = [pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, pt9, pt10, pt11, pt12, al1, al2, al3, al4, al5];
+const partnerImages = [
+  pt1,
+  pt2,
+  pt3,
+  pt4,
+  pt5,
+  pt6,
+  pt7,
+  pt8,
+  pt9,
+  pt10,
+  pt11,
+  pt12,
+  al1,
+  al2,
+  al3,
+  al4,
+  al5,
+];
 
 const specialtyIconMap: Record<
   string,
@@ -178,47 +196,48 @@ export default function Partners() {
           specialties: "Management, Commerce",
         },
 
-      { id: "12",
-        name: "N.R.T Nursing College",
-        location: "Thenni",
-        image_url: partnerImages[11],
-        specialties: "Nursing",
-       },
-      {
-        id: "13",
-        name: "Alvas Homeopathic Medical College",
-        location: "Mangalore",
-        image_url: partnerImages[12],
-        specialties: "Homeopathy, Medical Education",
-      },
-      {
-        id: "14",
-        name: "Alvas Ayurveda Medical College",
-        location: "Mangalore",
-        image_url: partnerImages[13],
-        specialties: "Ayurveda, Medicine",
-      },
-      {
-        id: "15",
-        name: "Alvas Degree College",
-        location: "Mangalore",
-        image_url: partnerImages[14],
-        specialties: "Commerce, Science, Management",
-      },
-      {
-        id: "16",
-        name: "Alvas College of Hospital and Administration",
-        location: "Mangalore",
-        image_url: partnerImages[15],
-        specialties: "Healthcare, Management, Hospital Administration",
-      },
-      {
-        id: "17",
-        name: "Alvas Institute of Engineering & Technology",
-        location: "Mangalore",
-        image_url: partnerImages[16],
-        specialties: "Engineering, Technology",
-      },
+        {
+          id: "12",
+          name: "N.R.T Nursing College",
+          location: "Thenni",
+          image_url: partnerImages[11],
+          specialties: "Nursing",
+        },
+        {
+          id: "13",
+          name: "Alvas Homeopathic Medical College",
+          location: "Mangalore",
+          image_url: partnerImages[12],
+          specialties: "Homeopathy, Medical Education",
+        },
+        {
+          id: "14",
+          name: "Alvas Ayurveda Medical College",
+          location: "Mangalore",
+          image_url: partnerImages[13],
+          specialties: "Ayurveda, Medicine",
+        },
+        {
+          id: "15",
+          name: "Alvas Degree College",
+          location: "Mangalore",
+          image_url: partnerImages[14],
+          specialties: "Commerce, Science, Management",
+        },
+        {
+          id: "16",
+          name: "Alvas College of Hospital and Administration",
+          location: "Mangalore",
+          image_url: partnerImages[15],
+          specialties: "Healthcare, Management, Hospital Administration",
+        },
+        {
+          id: "17",
+          name: "Alvas Institute of Engineering & Technology",
+          location: "Mangalore",
+          image_url: partnerImages[16],
+          specialties: "Engineering, Technology",
+        },
       ];
 
       // TODO: Uncomment when Supabase is configured

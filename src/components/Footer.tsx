@@ -56,17 +56,19 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Contact Info</h4>
             <ul>
-              <li>
-                <Phone size={18} color="white" className="contact-icon" /> +91
-                9447189626
+              <li className="contact-row">
+                <a href="tel:+919447189626">
+                  <Phone size={18} color="white" className="contact-icon" /> +91
+                  9447189626
+                </a>
+                <a href="mailto:canaancareer2005@gmail.com">
+                  <Mail size={18} color="white" className="contact-icon" />{" "}
+                  canaancareer2005@gmail.com
+                </a>
               </li>
               <li>
                 <MapPin size={18} color="white" className="contact-icon" />{" "}
                 Mallappally, Kerala
-              </li>
-              <li>
-                <Mail size={18} color="white" className="contact-icon" />{" "}
-                info@canaan.edu
               </li>
               <li>
                 <Clock size={18} color="white" className="contact-icon" /> 10 AM
@@ -95,10 +97,6 @@ export default function Footer() {
             >
               adbite.in
             </a>
-          </p>
-          <p>
-            <a href="#privacy">Privacy Policy</a> |{" "}
-            <a href="#terms">Terms of Service</a>
           </p>
         </div>
       </div>

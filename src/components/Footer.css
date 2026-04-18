@@ -59,6 +59,25 @@
   flex-shrink: 0;
 }
 
+.contact-row {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact-row a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #999;
+  white-space: nowrap;
+}
+
+.contact-row a:hover {
+  color: #d4a574;
+}
+
 .footer-section li > a {
   color: #999;
   text-decoration: none;

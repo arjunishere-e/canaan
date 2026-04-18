@@ -12,6 +12,11 @@ import pt9 from "../assets/partners/pt9.jpg";
 import pt10 from "../assets/partners/pt10.jpg";
 import pt11 from "../assets/partners/pt11.png";
 import pt12 from "../assets/partners/pt12.jpg";
+import al1 from "../assets/partners/al1.jpg";
+import al2 from "../assets/partners/al2.jpg";
+import al3 from "../assets/partners/al3.jpg";
+import al4 from "../assets/partners/al4.jpg";
+import al5 from "../assets/partners/al5.jpg";
 import {
   Stethoscope,
   Heart,
@@ -26,7 +31,7 @@ import {
   MapPin,
 } from "lucide-react";
 
-const partnerImages = [pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, pt9, pt10, pt11, pt12];
+const partnerImages = [pt1, pt2, pt3, pt4, pt5, pt6, pt7, pt8, pt9, pt10, pt11, pt12, al1, al2, al3, al4, al5];
 
 const specialtyIconMap: Record<
   string,
@@ -179,6 +184,41 @@ export default function Partners() {
         image_url: partnerImages[11],
         specialties: "Nursing",
        },
+      {
+        id: "13",
+        name: "Alvas Homeopathic Medical College",
+        location: "Mangalore",
+        image_url: partnerImages[12],
+        specialties: "Homeopathy, Medical Education",
+      },
+      {
+        id: "14",
+        name: "Alvas Ayurveda Medical College",
+        location: "Mangalore",
+        image_url: partnerImages[13],
+        specialties: "Ayurveda, Medicine",
+      },
+      {
+        id: "15",
+        name: "Alvas Degree College",
+        location: "Mangalore",
+        image_url: partnerImages[14],
+        specialties: "Commerce, Science, Management",
+      },
+      {
+        id: "16",
+        name: "Alvas College of Hospital and Administration",
+        location: "Mangalore",
+        image_url: partnerImages[15],
+        specialties: "Healthcare, Management, Hospital Administration",
+      },
+      {
+        id: "17",
+        name: "Alvas Institute of Engineering & Technology",
+        location: "Mangalore",
+        image_url: partnerImages[16],
+        specialties: "Engineering, Technology",
+      },
       ];
 
       // TODO: Uncomment when Supabase is configured

@@ -33,15 +33,53 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // TODO: Send email or save to database
-    console.log("Form submitted:", formData);
+  const sendToWhatsApp = () => {
+    // Check if required fields are filled
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.course
+    ) {
+      alert("Please fill in all required fields");
+      return;
+    }
+
+    // Format the message with form details
+    const messageText = `Hello,
+
+I am interested in your courses.
+
+*Personal Details:*
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Course Interested: ${formData.course}
+${formData.message ? `Message: ${formData.message}` : ""}
+
+Please get back to me with more information.`;
+
+    // WhatsApp number in international format (India: 91 + 8086250005)
+    const phoneNumber = "918086250005";
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(messageText);
+
+    // Create WhatsApp link and open in new window
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+
+    // Show success feedback
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: "", email: "", phone: "", course: "", message: "" });
     }, 3000);
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    sendToWhatsApp();
   };
 
   return (
@@ -81,8 +119,7 @@ export default function Contact() {
                 <Clock size={24} className="detail-icon" />
                 <h4>Hours</h4>
               </div>
-              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p>Saturday: 10:00 AM - 4:00 PM</p>
+              <p>Monday - Friday: 10:00 AM - 5:00 PM</p>
               <p>Sunday: Closed</p>
             </div>
 

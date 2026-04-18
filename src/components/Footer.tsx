@@ -4,6 +4,21 @@ import { Phone, MapPin, Mail, Clock } from "lucide-react";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    // Welcome message
+    const message = "Hi! Welcome to Canaan. How can we assist you?";
+    const phoneNumber = "918086250005"; // +91 8086250005
+    const encodedMessage = encodeURIComponent(message);
+
+    // Open WhatsApp
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
+      "_blank",
+    );
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -42,16 +57,20 @@ export default function Footer() {
             <h4>Contact Info</h4>
             <ul>
               <li>
-                <Phone size={18} color="white" className="contact-icon" /> +91 9447189626
+                <Phone size={18} color="white" className="contact-icon" /> +91
+                9447189626
               </li>
               <li>
-                <MapPin size={18} color="white" className="contact-icon" /> Mallappally, Kerala
+                <MapPin size={18} color="white" className="contact-icon" />{" "}
+                Mallappally, Kerala
               </li>
               <li>
-                <Mail size={18} color="white" className="contact-icon" /> info@canaan.edu
+                <Mail size={18} color="white" className="contact-icon" />{" "}
+                info@canaan.edu
               </li>
               <li>
-                <Clock size={18} color="white" className="contact-icon" /> 9 AM - 6 PM (Mon-Fri)
+                <Clock size={18} color="white" className="contact-icon" /> 10 AM
+                - 5 PM (Mon-Fri)
               </li>
             </ul>
           </div>
@@ -59,16 +78,7 @@ export default function Footer() {
           <div className="footer-section">
             <h4>Follow Us</h4>
             <div className="social-links">
-              <a href="#" className="social-link">
-                Facebook
-              </a>
-              <a href="#" className="social-link">
-                Instagram
-              </a>
-              <a href="#" className="social-link">
-                LinkedIn
-              </a>
-              <a href="#" className="social-link">
+              <a href="#" className="social-link" onClick={handleWhatsAppClick}>
                 WhatsApp
               </a>
             </div>
@@ -76,7 +86,16 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Adbite. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} canaan. All Rights Reserved. Designed by{" "}
+            <a
+              href="https://adbite.in"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              adbite.in
+            </a>
+          </p>
           <p>
             <a href="#privacy">Privacy Policy</a> |{" "}
             <a href="#terms">Terms of Service</a>

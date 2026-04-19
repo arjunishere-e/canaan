@@ -72,7 +72,7 @@ export default function Footer() {
               </li>
               <li>
                 <Clock size={18} color="white" className="contact-icon" /> 10 AM
-                - 5 PM (Mon-Fri)
+                - 5 PM (Mon-Sat)
               </li>
             </ul>
           </div>

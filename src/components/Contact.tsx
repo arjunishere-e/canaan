@@ -119,7 +119,7 @@ Please get back to me with more information.`;
                 <Clock size={24} className="detail-icon" />
                 <h4>Hours</h4>
               </div>
-              <p>Monday - Friday: 10:00 AM - 5:00 PM</p>
+              <p>Monday - Saturday: 10:00 AM - 5:00 PM</p>
               <p>Sunday: Closed</p>
             </div>
 
